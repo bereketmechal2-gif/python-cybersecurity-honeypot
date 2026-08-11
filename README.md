@@ -1,22 +1,9 @@
-# 🎲 4-Dice Match Betting Game
+# Python Cybersecurity Honeypot
 
-A command-line Python game featuring dynamic ASCII art rendering, modular gameplay logic, and robust user input validation.
+A lightweight Python automation script designed to simulate a basic security honeypot. 
 
-## 🚀 Features
-- **Side-by-Side ASCII Art**: Custom-rendered dice graphics built from string arrays.
-- **Defensive Programming**: Validates financial transactions, preventing negative bets, non-numeric strings, and overdrafts.
-- **Modular Design**: Separated concerns between the terminal rendering engine and win/loss state evaluations.
-
-## 🕹️ Game Rules
-You roll 4 dice. If the sum of your dice equals target combinations, you win multipliers:
-- **Sum of 4**: 20x Payout pluse 4
-- **Sum of 24**: 20x payout pluse 24
-- **Sum of 7**: 10x Payout
-- **Sum of 10**: 3x Payout
-- **Sum of 14**: 2.5x Payout
-
-## 🛠️ How To Run
-Ensure you have Python 3 installed. Run the following command in your terminal:
-```bash
-python main.py
-```
+## How It Works
+1. **File Detection**: Uses the `os` module to check for a decoy sensitive file (`credit_cards.txt`).
+2. **Data Generation**: Automatically initializes fake high-value data if the file is missing.
+3. **Intrusion Logging**: Appends a timestamped alert to a central security log if tampering/access is detected.
+4. **Log Analysis**: Reads and parses the log file to generate a security alert report in the terminal.
